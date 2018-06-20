@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title></title>
+        <link rel="icon" href="img/favicon.png" sizes="32x32" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/css/mdb.min.css">
+        <link rel="stylesheet" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled.min.css?ver=4.5.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" type="text/css" rel="stylesheet" />
+    </head>
+    <style>
+
+        .navbar{
+            box-shadow: 0 0px 0px 0 rgba(0,0,0,.16), 0 0px 0px 0 rgba(0,0,0,.12);
+        }
+        .container {
+            /*            max-width: 960px !important;*/
+        }
+        .work h3,.work h4,. work h5{
+            color: #333333 !important;
+        }
+        .work p{
+            font-family: 'Bariol-regular' !important;
+        }
+        .htext{
+            font-family: 'Bariol-regular' !important;
+            font-size: 18px
+        }
+
+        h1,h2,h4 {
+            font-family: 'Bariol-Bold', sans-serif !important;
+        }
+        .tutorial > h2, h3, h4 {
+            margin-bottom: 1rem;
+        }
+        h2.under::after {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 42%;
+            width: 70px;
+            background: #2196f3;
+            height: 1px;
+        }
+        .site_head {
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: .9375rem;
+            padding-right: .9375rem;
+            min-width: 300px;
+            max-width: 970px;
+            font-weight: 600;
+        }
+        div.masthead {
+            background-image: url(img/header.jpg);
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: 50% 0;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+            background-position: center center;
+            text-align: center;
+            color: white;
+            min-height: 450px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+        }
+        .darken {
+            position: relative;
+        }
+        .darken:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: block;
+        }
+        .darken p,
+        h1,
+        h2,
+        button {
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        div.masthead .intro-text {
+            padding-top: 170px;
+            padding-bottom: 100px;
+            font-family: 'Bariol-Bold', sans-serif;
+            text-shadow: 5px 5px 5px #000;
+        }
+        #t2 {
+            font-size: 50px !important;
+            text-shadow: 1px 3px 5px #fff;
+        }
+        .btn-trans {
+            background-color: transparent !important;
+            border: 1px solid !important;
+        }
+        hr.blue{
+            width: 60% !important;
+        }
+
+        html,
+        body,
+        header,
+        .jarallax {
+            height: 100vh;
+        }
+
+        html,
+        body,
+        header,
+        .intro-1 {
+            height: 200px;
+        }
+        html,
+        body,
+        .intro-2 {
+            height: 700px;
+        }
+        html,
+        body,
+        .intro-3 {
+            height: 700px;
+        }
+
+    </style>
+
+    <body class="">
+        <!--		Navigation Starts Here-->
+        <div class="container-fluid">
+            <div class="row text-center justify-content-center">
+                <!--Navbar-->
+                <nav class="container navbar navbar-expand-lg navbar-dark">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.png" height="50" alt="">
+                    </a>
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler btn-indigo" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Collapsible content -->
+                    <div class="collapse navbar-collapse" id="basicExampleNav">
+                        <!-- Links -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link blue-text" href="#">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link blue-text" href="#service">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link blue-text" href="#testimonial">Testimonials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link blue-text" href="#clients">Clients</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link blue-text" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                        <!-- Links -->
+                    </div>
+                    <!-- Collapsible content -->
+                </nav>
+                <!--/.Navbar-->
+            </div>
+        </div>
+        <!--		Navigation Ends Here-->
+
+
+        <!--        header picture-->
+        <div class="container-fluid masthead darken">
+            <div></div>
+            <div class="intro-text">
+                <h1 style="visibility: visible !important;" id="t2" class="intro-heading my-auto animated fadeInLeft blue-text">HyperCool</h1>
+                <h1 style="visibility: visible !important;" id="t1" class="intro-heading my-auto animated fadeInLeft">Your Technical and support Partner.</h1>
+                <!--                <p style="visibility: visible !important;" id="t3" class="animated fadeInLeft">By driving relevant consumers with the goal of improving brand recognition<br/>FrontiaMedia helps you do more in little time.</p>-->
+                <button href="#contact" class="btn btn-lg btn-blue">Hire Us</button>
+            </div>
+        </div>
+
+
+        <!--        Introduction-->
+        <div class="container my-5">
+            <h2 class="under text-center font-weight-bold blue-text my-3">
+                Hello, We Are <a class="orange-text font-weight-bold">Better</a> Than The Rest
+            </h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="htext text-center">HyperCool is an Air-conditioner installation and servicing company.</p>
+                </div>
+            </div>
+            <!--            <hr class="blue lighten-4">-->
+        </div>
+
+
+
+        <!--Main Navigation-->
+        <header>
+
+            <div class="view jarallax intro-1" data-jarallax='{"speed": 0.2}' style="background-image: url(https://mdbootstrap.com/img/Photos/Others/img%20%2844%29.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+                <div class="mask rgba-white-light">
+                    <div class="container flex-center text-center">
+                        <div class="row mt-5">
+                            <div class="col-md-12 wow fadeIn mb-3">
+                                <h1 class="indigo-text  mb-2 wow fadeInDown" data-wow-delay="0.3s">Our <a class="orange-text font-weight-bold">Specialties</a> Are... </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </header>
+        <!--Main Navigation-->
+
+
+        <div class="container work mt-5" id="service">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="img/1.png" class="img-fluid mx-auto">
+                    </div>
+                    <h4 class="text-center font-weight-bold blue-text">
+                        Repairs and Servicing
+                    </h4>
+                    <p class="text-center">At Hypercool, all repairs and servicing are performed by factory-authorised technicians from one of our 28 national service centres. In-home, drop-off and pick-up options are available dependent on your needs and product </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="img/21.png" class="img-fluid mx-auto">
+                    </div>
+                    <h4 class="text-center font-weight-bold blue-text">
+                        Installation Service
+                    </h4>
+                    <p class="text-center">We offer hassle-free installation for your air conditioner at a time to suit you. Our professional installation service is performed by factory-authorised technicians.  </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="img/3.png" class="img-fluid mx-auto">
+                    </div>
+                    <h4 class="text-center font-weight-bold blue-text">
+                        In House Repair
+                    </h4>
+                    <p class="text-center">We understand that if you have a problem, and you need it corrected quickly to keep family life running smoothly.
+                    We’ll schedule a convenient repair time with you for one of our factory-authorised technicians to visit your home, assess the fault and perform a repair.</p>
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="img/4.png" class="img-fluid mx-auto">
+                    </div>
+                    <h4 class="text-center font-weight-bold blue-text">
+                        Our Team & Service Centres
+                    </h4>
+                    <p class="text-center">You can be sure that when you need help, you’ll always be speaking to an expert who’ll put your needs first. Our customer service is rated as excellent by over 90% of our customers.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="img/5.png" class="img-fluid mx-auto">
+                    </div>
+                    <h4 class="text-center font-weight-bold blue-text">
+                        Distinguished Service
+                    </h4>
+                    <p class="text-center">At HyperCool, while we pride ourselves on delivering the best customer service, we also offer Distinguished Service. As part of this solution we offer you a different level of customer care. Click to find out more. </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="img/6.png" class="img-fluid mx-auto">
+                    </div>
+                    <h4 class="text-center font-weight-bold blue-text">
+                        Certified proffessionals
+                    </h4>
+                    <p class="text-center">All service calls and repairs are performed by factory-authorized Hypercool technicians.</p>
+                </div>
+            </div>
+            <!--            <hr class="blue lighten-4">-->
+        </div>
+
+
+        <div class="view jarallax intro-2" data-jarallax='{"speed": 0.2}' style="background-image: url(img/banner.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <div class="mask rgba-pink-slight">
+                <div class="container flex-center text-center">
+                    <div class="row mt-5">
+                        <div class="col-md-12 wow fadeIn mb-3">
+                            <h1 class="display-3 mb-2 wow fadeInDown indigo-text" data-wow-delay="0.3s">We Work To Serve You <a class="orange-text font-weight-bold">Better</a></h1>
+                            <a class="btn btn-indigo btn-lg wow fadeIn" data-wow-delay="0.4s" href="#contact">Send Us A Note</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid indigo darken-3 mb-4">
+            <div class="container">
+                <div class="row py-5 ">
+                    <div class="col-md-8">
+                        <h2>Let us help you get efficiency</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#contact" class="btn orange">Click Here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--        Testimonial Section-->
+        <div class="container mb-5" id="testimonials">
+            <!-- Section: Testimonials -->
+            <section class="text-center">
+
+                <!-- Section heading -->
+                <h2 class="under h1-responsive blue-text font-weight-bold my-4">Testimonials</h2>
+
+                <!-- Carousel Wrapper -->
+                <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <!--First slide-->
+                        <div class="carousel-item active">
+                            <div class="testimonial">
+                                <!--Avatar-->
+                                <div class="avatar mx-auto mb-4">
+                                    <img src="img/avatar-01.png" class="rounded-circle img-fluid" alt="First sample avatar image">
+                                </div>
+                                <!--Content-->
+                                <p>
+                                    <i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore cum accusamus eveniet molestias voluptatum inventore laboriosam labore sit, aspernatur praesentium iste impedit quidem dolor veniam.
+                                </p>
+                                <h4 class="font-weight-bold">Anna Deynah</h4>
+                                <h6 class="font-weight-bold my-3">Founder at ET Company</h6>
+                                <!--Review-->
+                                <i class="fa fa-star blue-text"> </i>
+                                <i class="fa fa-star blue-text"> </i>
+                                <i class="fa fa-star blue-text"> </i>
+                                <i class="fa fa-star blue-text"> </i>
+                                <i class="fa fa-star-half-full blue-text"> </i>
+                            </div>
+                        </div>
+                        <!--First slide-->
+                        <!--Second slide-->
+                        <div class="carousel-item">
+                            <div class="testimonial">
+                                <!--Avatar-->
+                                <div class="avatar mx-auto mb-4">
+                                    <img src="img/avatar-1.png" class="rounded-circle img-fluid" alt="Second sample avatar image">
+                                </div>
+                                <!--Content-->
+                                <p>
+                                    <i class="fa fa-quote-left"></i> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore. </p>
+                                <h4 class="font-weight-bold">Maria Kate</h4>
+                                <h6 class="font-weight-bold my-3">Photographer at Studio LA</h6>
+                                <!--Review-->
+                                <i class="fa fa-star blue-text"> </i>
+                                <i class="fa fa-star blue-text"> </i>
+                                <i class="fa fa-star blue-text"> </i>
+                                <i class="fa fa-star blue-text"> </i>
+                                <i class="fa fa-star blue-text"> </i>
+                            </div>
+                        </div>
+                        <!--Second slide-->
+                        <!--Third slide-->
+                        <div class="carousel-item">
+                            <div class="testimonial">
+                                <!--Avatar-->
+                                <div class="avatar mx-auto mb-4">
+                                    <img src="img/avatar-10.png" class="rounded-circle img-fluid" alt="Third sample avatar image">
+                                </div>
+                                <!--Content-->
+                                <p>
+                                    <i class="fa fa-quote-left"></i> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                                <h4 class="font-weight-bold">John Doe</h4>
+                                <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>
+                                <!--Review-->
+                                <i class="fa fa-star blue-text"> </i>
+                                <i class="fa fa-star blue-text"> </i>
+                                <i class="fa fa-star blue-text"> </i>
+                                <i class="fa fa-star blue-text"> </i>
+                                <i class="fa fa-star-o blue-text"> </i>
+                            </div>
+                        </div>
+                        <!--Third slide-->
+                    </div>
+                    <!--Slides-->
+                    <!--Controls-->
+                    <a class="carousel-item-prev left carousel-control" href="#carousel-example-1" role="button" data-slide="prev">
+                        <span class="icon-prev" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-item-next right carousel-control" href="#carousel-example-1" role="button" data-slide="next">
+                        <span class="icon-next" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <!--Controls-->
+                </div>
+                <!-- Carousel Wrapper -->
+
+            </section>
+            <!-- Section: Testimonials -->
+        </div>
+
+
+
+        <div class="view jarallax intro-3" data-jarallax='{"speed": 0.2}' style="background-image: url(img/testimonial.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <div class="mask rgba-purple-slight">
+                <div class="container h-100 d-flex align-items-center d-flex justify-content-center">
+                    <div class="row mt-5">
+                        <div class="col-md-12 wow fadeIn mb-3">
+                            <div class="intro-info-content text-center">
+                                <h1 class="display-3 white-text mb-2 wow fadeInDown" data-wow-delay="0.3s">We can help <a class="orange-text">satisfy</a> your <a class="orange-text">support</a> needs!</h1>
+                                <a class="btn btn-indigo wow fadeIn" data-wow-delay="0.4s" href="#contact">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mt-2" id="clients">
+            <h2 class="under h1-responsive font-weight-bold blue-text text-center my-5">Our Clients</h2>
+            <section class="customer-logos slider justify-content-center">
+                <div class="slide"><img src="img/Sterling-Bank-Plc.jpg"></div>
+                <div class="slide"><img src="img/starsight.jpg"></div>
+<!--
+                <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+                <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+                <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+                <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+                <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+                <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+-->
+            </section>
+        </div>
+
+
+        <!--        contact us section-->
+        <div class="container" id="contact">
+            <!-- Section: Contact -->
+            <section class="my-5">
+
+                <!-- Section heading -->
+                <h2 class="under h1-responsive font-weight-bold blue-text text-center my-5">Contact us</h2>
+                <!-- Section description -->
+                <p class="text-center w-responsive mx-auto pb-5">Our friendly customer service representatives are committed to answering all your questions and meeting any need you may have. We would love to hear from you! Please fill out the form below so we may assist you, or contact us through the number or email address below for urgent needs</p>
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-5 mb-lg-0 mb-4">
+
+                        <!-- Form with header -->
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- Header -->
+                                <div class="form-header indigo darken-2">
+                                    <h3 class="mt-2"><i class="fa fa-envelope"></i> Write to us:</h3>
+                                </div>
+                                <p class="dark-grey-text">We'll write rarely, but only the best content.</p>
+                                <!-- Body -->
+                                <div class="md-form">
+                                    <i class="fa fa-user prefix grey-text"></i>
+                                    <input type="text" id="form-name" class="form-control">
+                                    <label for="form-name">Your name</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-envelope prefix grey-text"></i>
+                                    <input type="text" id="form-email" class="form-control">
+                                    <label for="form-email">Your email</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-tag prefix grey-text"></i>
+                                    <input type="text" id="form-Subject" class="form-control">
+                                    <label for="form-Subject">Subject</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-pencil prefix grey-text"></i>
+                                    <textarea type="text" id="form-text" class="form-control md-textarea" rows="3"></textarea>
+                                    <label for="form-text">Message</label>
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn indigo darken-3">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Form with header -->
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-7">
+
+                        <!-- Google map-->
+                        <div id="map-container" class="rounded z-depth-1-half map-container" style="height: 400px"></div>
+                        <br>
+                        <!-- Buttons-->
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <a class="btn-floating indigo darken-3">
+                                    <i class="fa fa-map-marker"></i>
+                                </a>
+                                <p>Plot 2420 Yakubu Gowan Crecent (Estate Office)</p>
+                                <p class="mb-md-0">Abuja</p>
+                            </div>
+                            <div class="col-md-4">
+                                <a class="btn-floating indigo darken-3">
+                                    <i class="fa fa-phone"></i>
+                                </a>
+                                <p>+ 234 813 1151 110</p>
+                                <p class="mb-md-0">Mon - Fri, 8:00am - 5:00pm</p>
+                            </div>
+                            <div class="col-md-4">
+                                <a class="btn-floating indigo darken-3">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                                <p>Naza@hypercoolng.com</p>
+                                <!--                                <p class="mb-0">sale@gmail.com</p>-->
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </section>
+            <!-- Section: Contact -->
+        </div>
+
+
+
+
+
+        <!--Footer-->
+        <footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
+
+            <!--Footer Links-->
+            <div class="container text-center text-md-left">
+
+                <!-- Footer links -->
+                <div class="row text-center text-md-left mt-3 pb-3">
+
+                    <!--First column-->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">HyperCool</h6>
+                        <p>HyperCool is an Air-conditioner installation and servicing company.</p>
+                    </div>
+                    <!--/.First column-->
+
+                    <hr class="w-100 clearfix d-md-none">
+
+                    <!--Second column-->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                        <p><a href="#!">Repairs</a></p>
+                        <p><a href="#!">Installation Service</a></p>
+                        <!--
+<p><a href="#!">BrandFlow</a></p>
+<p><a href="#!">Bootstrap Angular</a></p>
+-->
+                    </div>
+                    <!--/.Second column-->
+
+                    <hr class="w-100 clearfix d-md-none">
+
+                    <!--Third column-->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+                        <p><a href="#!">Home</a></p>
+                        <p><a href="#services">Our Specialties</a></p>
+                        <p><a href="#testimonials">Testimonials</a></p>
+                        <p><a href="#contact">Contact Us</a></p>
+                    </div>
+                    <!--/.Third column-->
+
+                    <hr class="w-100 clearfix d-md-none">
+
+                    <!--Fourth column-->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                        <p><i class="fa fa-home mr-3"></i> Plot 2420 Yakubu Gowan Crecent (Estate Office) Abuja</p>
+                        <p><i class="fa fa-envelope mr-3"></i> Naza@hypercoolng.com</p>
+                        <p><i class="fa fa-phone mr-3"></i> + 234 813 1151 110</p>
+                        <!--                        <p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p>-->
+                    </div>
+                    <!--/.Fourth column-->
+
+                </div>
+                <!-- Footer links -->
+
+                <hr>
+
+                <div class="row py-3 d-flex align-items-center">
+
+                    <!--Grid column-->
+                    <div class="col-md-8 col-lg-8">
+
+                        <!--Copyright-->
+                        <p class="text-center text-md-left grey-text">Designed by: <a href="https://www.i9ja.com.ng"><strong> Innovationaija</strong></a> © 2018 Copyright: <a href="#"><strong>Hypercool</strong></a></p>
+                        <!--/.Copyright-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-4 col-lg-4 ml-lg-0">
+
+                        <!--Social buttons-->
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-facebook"></i></a></li>
+                                <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-google-plus"></i></a></li>
+                                <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <!--/.Social buttons-->
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+            </div>
+
+        </footer>
+        <!--/.Footer-->
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/mdb.js"></script>
+        <!--Google Maps-->
+        <script src="https://maps.google.com/maps/api/js"></script>
+        <script>
+            function init_map() {
+
+                var var_location = new google.maps.LatLng(9.0475081, 7.5141714);
+
+                var var_mapoptions = {
+                    center: var_location,
+
+                    zoom: 14
+                };
+
+                var var_marker = new google.maps.Marker({
+                    position: var_location,
+                    map: var_map,
+                    title: "Yakubu Gowon Crecent"
+                });
+
+                var var_map = new google.maps.Map(document.getElementById("map-container"),
+                                                  var_mapoptions);
+
+                var_marker.setMap(var_map);
+
+            }
+
+            google.maps.event.addDomListener(window, 'load', init_map);
+        </script>
+        <script>
+
+            new WOW().init();
+
+        </script>
+    </body>
+
+</html>
